@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Reset default styles */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #343a40;
+            line-height: 1.6;
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 0.5em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hero Section */
+        #hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4em 1em;
+            
+            margin: 2em 1em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            flex: 1; /* Take remaining height */
+        }
+
+        #hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        /* About Section */
+        #about {
+            padding: 4em 1em;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            margin: 2em 1em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(245, 242, 242);
+        }
+
+        #about h2 {
+            color: #ffffff;
+            margin-bottom: 0.5em;
+        }
+
+        #about p {
+            color: #ffffff;
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>3bslamine</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Manga</a></li>
+            <li><a href="#about">Films</a></li>
+            <li><a href="#contact">Videos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <video autoplay loop muted playsinline>
+            <source src="https://cdn.pixabay.com/video/2021/08/10/84574-586228759_large.mp4" type="video/mp4">
+            <!-- Add other video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Anime f ll 2lb</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 3bslaaaaaaam.</p>
+    </footer>
+</body>
+</html>

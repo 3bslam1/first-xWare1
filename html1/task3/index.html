@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #f4f4f4;
+            padding: 15px;
+            width: 25%;
+            float: left;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        main {
+            width: 70%;
+            float: right;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        footer {
+            clear: both;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Technical Documentation</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#license">License</a></li>
+        </ul>
+    </nav>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio> 
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the technical documentation for our project. This document will guide you through the setup, usage, and functionality of our software.</p>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <span>To install the software, follow these steps:</span>
+            <ol>
+                <li>Download the software from the <a href="https://example.com">official website</a>.</li>
+                <li>Extract the files to your desired location.</li>
+                <li>Run the installation script by executing <code>install.sh</code> in your terminal.</li>
+            </ol>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>To use the software, open your terminal and run the following command:</p>
+            <pre><code>./start.sh</code></pre>
+        </section>
+
+        <section id="api">
+            <h2>API</h2>
+            <p>The software provides the following API endpoints:</p>
+            <ul>
+                <li><code>GET /api/v1/resource</code> - Fetch a list of resources.</li>
+                <li><code>POST /api/v1/resource</code> - Create a new resource.</li>
+                <li><code>PUT /api/v1/resource/{id}</code> - Update an existing resource.</li>
+                <li><code>DELETE /api/v1/resource/{id}</code> - Delete a resource.</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Here are some examples of how to use the API:</p>
+            <pre><code>curl -X GET https://api.example.com/v1/resource</code></pre>
+        </section>
+
+        <section id="license">
+            <h2>License</h2>
+            <p>This project is licensed under the MIT License. See the <a href="LICENSE.txt">LICENSE.txt</a> file for more information.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
